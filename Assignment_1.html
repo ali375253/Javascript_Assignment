@@ -1,0 +1,94 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="x-ua-compatible>
+		<title>Assignment 1</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<style>
+			div{
+				margin:20px 0px;
+			}
+		</style>
+		<script src="Script\Assignment1.js"></script>
+	</head>
+	<body onload="createListsAndCheckBox()">
+		<form name="employeeDetails" onsubmit="getDetails()" >
+			<div>
+				<label>First Name: <br/>
+					<input type="text" id="firstName" name="firstName" /> 
+				</label>
+			</div>
+			<div>
+				<label>Last Name: <br/>
+					<input type="text" id="lastName" name="lastName" /> </label>
+				</label>
+			</div>
+			<div>
+				<label>Email:<br/>
+					<input type="email" id="email" name="email" /> </label>
+				</label>
+			</div>
+			<div>
+				<label>Contact Number:<br/>
+					<input type="tel" id="phone" name="phone" /> </label>
+				</label>
+			</div>
+			<div>
+				<label>Address:<br/>
+					<textarea id="address" name="address" ></textarea> </label>
+				</label>
+			</div>
+			<div>
+				<label>Username:<br/>
+					<input type="text" id="username" name="username" /> </label>
+				</label>
+			</div>
+			<div>
+				<label>Password:<br/>
+					<input type="password" id="password" name="password" /> </label>
+				</label>
+			</div>
+			<div>
+				<label for="gender">Gender:<br/>
+					<input type="radio" id="gender" name="gender" value="Male"/>Male 
+				</label> <br/>
+				<label>
+					<input type="radio" id="gender" name="gender" value="Female" />Female 
+				</label>
+			</div>
+			<div id="qualification_section">
+                Qualification:<br/>
+                <!-- <label for="qualification">Qualification:</label><br/>
+				<select id="qualification" name="qualification">
+					<option value="10th">10th</option>
+					<option value="12th">12th</option>
+					<option value="Graduate">Graduate</option>
+					<option value="Post_Graduate">Post Graduate</option>
+				</select>   -->     
+            </div>
+			<div id="experience_section">
+				Experience:<br/>
+				<!-- <label for="experience">Experience:</label><br/>
+				<select id="experience" name="experience">
+					<option value="Fresher">Fresher</option>
+					<option value="Six_Months">6 Months</option>
+					<option value="One_Year">1 Year</option>
+					<option value="More_than_year">&gt 1 Year</option>
+				</select> -->
+			</div>
+			<div id="coding_languages">
+				Coding Languages :<br/>
+				<!-- <label for="c">Coding Language:</label><br/>
+				<label><input type="checkbox" id="c" name="language" value="C/C++" />C/C++</label><br/>
+				<label><input type="checkbox" id="java" name="language" value="Java" />Java</label><br/>
+				<label><input type="checkbox" id="c#" name="language" value="C#" />C#</label><br/>
+				<label><input type="checkbox" id="php" name="language" value="PHP" />PHP</label><br/>
+				<label><input type="checkbox" id="python" name="language" value="Python" />Python</label> -->
+			</div>
+			<div>
+				<button type="submit" value="submit" name="submit">Submit</button>
+			</div>
+		</form>
+	</body>
+</html>
